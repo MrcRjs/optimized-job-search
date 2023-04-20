@@ -28,7 +28,7 @@ const KEYWORDS = [
     "remote"
 ];
 
-const EXCLUDE = [
+const EXCLUDES = [
     // "senior",
     "intern",
     "junior",
@@ -43,7 +43,7 @@ function generateSEJobQuery(from = "LAST_DAY") {
     const sitesStr = SITES.map(s => `site:${s}`).join(" | ");
     const rolesStr = `(${ROLES.join(' AND ')})`;
     const keywordsStr = `(${KEYWORDS.join(' | ')})`;
-    const excludeStr = EXCLUDE.map(e => `-${e}`).join(' ');
+    const excludeStr = EXCLUDES.map(e => `-${e}`).join(' ');
     const fromStr = `after:${formatDate(fromDate(from))}`;
     return `${sitesStr} ${rolesStr} ${keywordsStr} ${excludeStr} ${fromStr}`;
 }
