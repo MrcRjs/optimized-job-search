@@ -14,8 +14,6 @@ $ chmod +x ./index.js
 
 ## Usage
 
-```
 Update `sites`, `roles`, `keywords`, `excludes` with your own criteria.
 
 Run `./index.js` and it will automatically open your browser with the google search.
-```
