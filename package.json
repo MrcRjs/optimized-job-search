@@ -1,0 +1,21 @@
+{
+  "name": "efficient-job-search",
+  "version": "1.0.0",
+  "description": "Generate a Google query to efficiently search in multiple job boards for jobs that match a specific criteria. ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Google",
+    "job",
+    "productivity",
+    "script"
+  ],
+  "author": "Marco Rojas",
+  "license": "CC-BY-SA-4.0",
+  "dependencies": {
+    "open": "9.1.0"
+  }
+}
